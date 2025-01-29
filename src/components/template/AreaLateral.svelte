@@ -19,7 +19,7 @@
 
 
 <aside
-  class="flex flex-col z-40 self-start max-md:z-40 max-lg:z-50 max-md:{$menuAberto ? "block" : "hidden" } max-lg:{$menuAberto ? "block" : "hidden"}
+  class="flex flex-col self-start
  border border-zinc-800 p-5 rounded-md gap-10 w-72"
 >
   <Menu titulo="Navegação">

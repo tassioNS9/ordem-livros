@@ -2,6 +2,7 @@
   import AreaLateral from "./AreaLateral.svelte";
   import Cabecalho from "./Cabecalho.svelte";
   import Rodape from "./Rodape.svelte";
+  import {menuAberto} from "../../store.js";
 </script>
 
 <div
@@ -15,7 +16,10 @@
     <main class="flex-1">
       <slot></slot>
     </main>
-    <AreaLateral />
+    <div class="max-md:{$menuAberto ? 'block' : 'hidden'} ">
+      <AreaLateral />
+    </div>
+
   </div>
   <Rodape />
 </div>
