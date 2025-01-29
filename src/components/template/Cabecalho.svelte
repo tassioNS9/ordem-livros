@@ -14,6 +14,6 @@
   "
 >
   <Logo />
-  <button on:click={toggleMenu}><IconMenu2 size={30} id="menu-btn" /></button>
+  <button class="hidden max-md:block max-lg:block" on:click={toggleMenu}><IconMenu2 size={30} id="menu-btn" /></button>
 
 </header>
