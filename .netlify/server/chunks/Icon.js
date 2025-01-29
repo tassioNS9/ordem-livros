@@ -66,4 +66,3 @@ function Icon($$payload, $$props) {
 export {
   Icon as I
 };
-//# sourceMappingURL=Icon.js.map

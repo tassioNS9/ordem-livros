@@ -12,4 +12,3 @@ export {
   equals as e,
   safe_equals as s
 };
-//# sourceMappingURL=equality.js.map

@@ -120,4 +120,3 @@ George R.R. Martin é amplamente reconhecido como um dos mais influentes autores
 export {
   autores as a
 };
-//# sourceMappingURL=autores.js.map

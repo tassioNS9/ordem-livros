@@ -1,4 +1,4 @@
-import { T as spread_props, V as slot, W as sanitize_props, X as fallback, _ as attr, Y as escape_html, Z as bind_props, S as pop, Q as push, a3 as ensure_array_like, $ as stringify, a0 as store_get, a1 as unsubscribe_stores } from "../../../../chunks/index.js";
+import { T as spread_props, V as slot, W as sanitize_props, X as fallback, _ as attr, Y as escape_html, Z as bind_props, S as pop, Q as push, a3 as ensure_array_like, a2 as stringify, $ as store_get, a0 as unsubscribe_stores } from "../../../../chunks/index.js";
 import { p as page } from "../../../../chunks/stores.js";
 import { I as Icon } from "../../../../chunks/Icon.js";
 function Brand_amazon($$payload, $$props) {
@@ -77,4 +77,3 @@ function _page($$payload, $$props) {
 export {
   _page as default
 };
-//# sourceMappingURL=_page.svelte.js.map

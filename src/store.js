@@ -5,5 +5,6 @@ import { writable } from "svelte/store";
 export const menuAberto = writable(false);
 
 export function toggleMenu() {
+    console.log(menuAberto);
     menuAberto.update(menuAberto => !menuAberto);
 }

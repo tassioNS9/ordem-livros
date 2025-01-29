@@ -34,4 +34,3 @@ const page = {
 export {
   page as p
 };
-//# sourceMappingURL=stores.js.map

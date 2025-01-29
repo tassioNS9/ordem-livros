@@ -1,4 +1,4 @@
-import { a2 as noop } from "./index.js";
+import { a1 as noop } from "./index.js";
 import { a as safe_not_equal } from "./equality.js";
 const subscriber_queue = [];
 function readable(value, start) {
@@ -57,4 +57,3 @@ export {
   readable as r,
   writable as w
 };
-//# sourceMappingURL=index3.js.map

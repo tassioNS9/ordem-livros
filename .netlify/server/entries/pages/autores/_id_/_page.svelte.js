@@ -1,4 +1,4 @@
-import { X as fallback, _ as attr, Z as bind_props, S as pop, Q as push, a0 as store_get, a1 as unsubscribe_stores } from "../../../../chunks/index.js";
+import { X as fallback, _ as attr, Z as bind_props, S as pop, Q as push, $ as store_get, a0 as unsubscribe_stores } from "../../../../chunks/index.js";
 import { p as page } from "../../../../chunks/stores.js";
 import { marked } from "marked";
 function html(value) {
@@ -31,4 +31,3 @@ function _page($$payload, $$props) {
 export {
   _page as default
 };
-//# sourceMappingURL=_page.svelte.js.map

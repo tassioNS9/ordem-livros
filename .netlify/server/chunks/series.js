@@ -178,4 +178,3 @@ const series = [
 export {
   series as s
 };
-//# sourceMappingURL=series.js.map

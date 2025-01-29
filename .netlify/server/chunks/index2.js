@@ -94,4 +94,3 @@ export {
   json as j,
   text as t
 };
-//# sourceMappingURL=index2.js.map

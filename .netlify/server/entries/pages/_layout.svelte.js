@@ -1,4 +1,4 @@
-import { T as spread_props, V as slot, W as sanitize_props, X as fallback, Y as escape_html, Z as bind_props, _ as attr, $ as stringify, a0 as store_get, a1 as unsubscribe_stores, S as pop, Q as push } from "../../chunks/index.js";
+import { T as spread_props, V as slot, W as sanitize_props, X as fallback, Y as escape_html, Z as bind_props, _ as attr, S as pop, Q as push, $ as store_get, a0 as unsubscribe_stores } from "../../chunks/index.js";
 import { w as writable } from "../../chunks/index3.js";
 import { I as Icon } from "../../chunks/Icon.js";
 function Books($$payload, $$props) {
@@ -370,9 +370,11 @@ function MenuItem($$payload, $$props) {
   $$payload.out += `<!----> <span>${escape_html(texto)}</span></a></li>`;
   bind_props($$props, { href, texto });
 }
-function AreaLateral($$payload) {
-  var $$store_subs;
-  $$payload.out += `<aside${attr("class", `flex flex-col z-40 self-start max-md:z-40 max-lg:z-50 max-md:${stringify(store_get($$store_subs ??= {}, "$menuAberto", menuAberto) ? "block" : "hidden")} max-lg:${stringify(store_get($$store_subs ??= {}, "$menuAberto", menuAberto) ? "block" : "hidden")} border border-zinc-800 p-5 rounded-md gap-10 w-72`)}>`;
+function AreaLateral($$payload, $$props) {
+  push();
+  menuAberto.subscribe(($menuAberto) => {
+  });
+  $$payload.out += `<aside class="flex flex-col self-start border border-zinc-800 p-5 rounded-md gap-10 w-72">`;
   Menu($$payload, {
     titulo: "Navegação",
     children: ($$payload2) => {
@@ -502,7 +504,7 @@ function AreaLateral($$payload) {
     $$slots: { default: true }
   });
   $$payload.out += `<!----></aside>`;
-  if ($$store_subs) unsubscribe_stores($$store_subs);
+  pop();
 }
 function Logo($$payload) {
   $$payload.out += `<a href="/" class="flex items-center gap-2"><img src="/logo.png" alt="Logo" class="w-12 h-12"> <div class="flex flex-col leading-3"><span class="font-thin text-zinc-400">ordem dos</span> <span class="font-black text-lg tracking-widest">LIVROS</span></div></a>`;
@@ -520,15 +522,21 @@ function Rodape($$payload, $$props) {
   pop();
 }
 function Pagina($$payload, $$props) {
+  push();
+  var $$store_subs;
+  menuAberto.subscribe(($menuAberto) => {
+  });
   $$payload.out += `<div class="relative flex flex-col min-h-screen bg-black text-white">`;
   Cabecalho($$payload);
   $$payload.out += `<!----> <div class="flex-1 flex max-w-7xl mx-auto w-full p-5 relative"><main class="flex-1"><!---->`;
   slot($$payload, $$props, "default", {});
-  $$payload.out += `<!----></main> `;
+  $$payload.out += `<!----></main> <div${attr("class", store_get($$store_subs ??= {}, "$menuAberto", menuAberto) ? "block" : "hidden")}>`;
   AreaLateral($$payload);
-  $$payload.out += `<!----></div> `;
+  $$payload.out += `<!----></div></div> `;
   Rodape($$payload);
   $$payload.out += `<!----></div>`;
+  if ($$store_subs) unsubscribe_stores($$store_subs);
+  pop();
 }
 function _layout($$payload, $$props) {
   push();
@@ -545,4 +553,3 @@ function _layout($$payload, $$props) {
 export {
   _layout as default
 };
-//# sourceMappingURL=_layout.svelte.js.map

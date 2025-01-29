@@ -1,4 +1,4 @@
-import { X as fallback, _ as attr, $ as stringify, Y as escape_html, Z as bind_props, S as pop, Q as push, a3 as ensure_array_like } from "../../chunks/index.js";
+import { X as fallback, _ as attr, a2 as stringify, Y as escape_html, Z as bind_props, S as pop, Q as push, a3 as ensure_array_like } from "../../chunks/index.js";
 import { s as series } from "../../chunks/series.js";
 function ItemSerie($$payload, $$props) {
   push();
@@ -25,4 +25,3 @@ function _page($$payload) {
 export {
   _page as default
 };
-//# sourceMappingURL=_page.svelte.js.map

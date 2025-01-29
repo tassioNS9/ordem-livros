@@ -3,6 +3,10 @@
   import Cabecalho from "./Cabecalho.svelte";
   import Rodape from "./Rodape.svelte";
   import {menuAberto} from "../../store.js";
+  let valor;
+  const unsubscribe = menuAberto.subscribe(($menuAberto) => {
+    valor = $menuAberto;
+  });
 </script>
 
 <div
@@ -16,7 +20,7 @@
     <main class="flex-1">
       <slot></slot>
     </main>
-    <div class="max-md:{$menuAberto ? 'block' : 'hidden'} ">
+    <div class={$menuAberto ? "block" : "hidden"}>
       <AreaLateral />
     </div>
 

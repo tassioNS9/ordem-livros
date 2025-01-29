@@ -1032,7 +1032,7 @@ function ensure_array_like(array_like_or_iterator) {
   return [];
 }
 export {
-  stringify as $,
+  store_get as $,
   effect_root as A,
   BLOCK_EFFECT as B,
   CLEAN as C,
@@ -1061,9 +1061,9 @@ export {
   bind_props as Z,
   attr as _,
   active_reaction as a,
-  store_get as a0,
-  unsubscribe_stores as a1,
-  noop as a2,
+  unsubscribe_stores as a0,
+  noop as a1,
+  stringify as a2,
   ensure_array_like as a3,
   rest_props as a4,
   spread_attributes as a5,
@@ -1095,4 +1095,3 @@ export {
   clear_text_content as y,
   array_from as z
 };
-//# sourceMappingURL=index.js.map

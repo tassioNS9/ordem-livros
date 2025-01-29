@@ -12,4 +12,3 @@ function load(dados) {
 export {
   load
 };
-//# sourceMappingURL=_page.js.map

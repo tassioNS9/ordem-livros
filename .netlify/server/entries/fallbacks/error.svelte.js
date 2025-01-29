@@ -1,4 +1,4 @@
-import { Y as escape_html, a0 as store_get, a1 as unsubscribe_stores, S as pop, Q as push } from "../../chunks/index.js";
+import { Y as escape_html, $ as store_get, a0 as unsubscribe_stores, S as pop, Q as push } from "../../chunks/index.js";
 import { p as page } from "../../chunks/stores.js";
 function Error($$payload, $$props) {
   push();
@@ -10,4 +10,3 @@ function Error($$payload, $$props) {
 export {
   Error as default
 };
-//# sourceMappingURL=error.svelte.js.map

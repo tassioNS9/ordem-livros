@@ -15,6 +15,10 @@
   import Menu from "./Menu.svelte";
   import MenuItem from "./MenuItem.svelte";
   import {menuAberto} from "../../store.js";
+  let valor;
+  const unsubscribe = menuAberto.subscribe(($menuAberto) => {
+    valor = $menuAberto;
+  });
 </script>
 
 
