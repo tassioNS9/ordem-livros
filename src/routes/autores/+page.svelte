@@ -9,7 +9,7 @@
     principal="Autores"
     secundario="Conheça os autores que escrevem as histórias que você ama"
   />
-  <div class="grid grid-cols-2 gap-5">
+  <div class="grid grid-cols-2 gap-5 max-md:grid-cols-1">
     {#each autores as autor}
       <ItemAutor {autor} />
     {/each}

@@ -5,13 +5,13 @@
 </script>
 
 <div
-  class="
+  class=" relative
     flex flex-col min-h-screen
   bg-black text-white
   "
 >
   <Cabecalho />
-  <div class="flex-1 flex max-w-7xl mx-auto w-full p-5">
+  <div class="flex-1 flex max-w-7xl mx-auto w-full p-5 relative">
     <main class="flex-1">
       <slot></slot>
     </main>

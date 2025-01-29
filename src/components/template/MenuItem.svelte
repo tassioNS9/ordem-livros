@@ -1,10 +1,11 @@
 <script>
   export let href = "/";
   export let texto = "";
+  import {toggleMenu} from "../../store.js";
 </script>
 
 <li>
-  <a
+  <a on:click={toggleMenu}
     {href}
     class="
       flex gap-2 items-center cursor-pointer px-4 py-2
